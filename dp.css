@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/*Overall styles*/
+html {
+  background: url("https://c.pxhere.com/photos/ab/86/painting_texture_painterly_texture_design_artistic_paint_background_design_element-859597.jpg!d") no-repeat center center scroll;
+  background-size: cover;
+  font-family: 'Montserrat';
+}
+
+/*Header styles*/
+#main-doc header {
+  font-weight: bold;
+  font-size: 1.4em;
+  padding-top: 10px;
+  border-bottom: solid black;
+}
+
+/*Nav styles*/
+#navbar {
+  height: 100%;
+  width: 300px;
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: hsl(120, 100%, 25%, 40%);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+#navbar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 13px;
+  border-bottom: solid black 1px;
+}
+
+#navbar a:hover {
+  color: #d9b382;
+}
+
+#navbar header {
+  font-weight: bold;
+  font-size: 1.4em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: solid black 1px;
+}
+
+/*  Push main to side  */
+#main-doc {
+  margin-left: 300px;
+  padding: 0px 10px;
+}
+
+/*  Changes attributes of the nav bar  */
+@media screen and (max-height: 450px) {
+  .#navbar {padding-top: 15px;}
+  .#navbar a {font-size: 1.1em;}
+}
+
+code { 
+  background-color: lightyellow;
+}
+
+/*Main styles*/
+#main-doc section {
+  display: block;
+}
